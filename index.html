@@ -5,6 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="style.css" >
+        <link type="text/css" rel="stylesheet" href="media-queries.css" >
+        <link type="text/css" rel="stylesheet" href="font.css" >
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
@@ -13,12 +15,12 @@
     <body>
         <header id="header">
             <div class="logo">
-                <a href="https://zircdev.netlify.app"><img src="assets/zirc_logo.png" alt="ZircLogo" /></a>
+                <a href="#"><img src="assets/zirc_logo.png" alt="ZircLogo" /></a>
             </div>
             <div class="navigation">
-                <ul class="nav-ul">
+                <ul class="nav-ul flex-centered">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://zircdev.netlify.app">Home</a>
+                        <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
@@ -38,9 +40,8 @@
 
 
         <section class="hero-section">
-            <div class="hero-container">
+            <div class="hero-container flex-column-centered">
                 <div class="hero-name">
-                    <!-- <span>I am</span> -->
                     <h1>Zirc Albon</h1>
                 </div>
                 <div class="hero-title">
@@ -55,9 +56,9 @@
                         <span class="hero-job">Web Developer</span>
                     </div>
                 </div>
-                <div class="hero-cv">
+                <div class="hero-cv flex-column-centered">
                     <div class="hero-cv-item">
-                        <small><a href="https://drive.google.com/file/d/1NLcNvXgETZvb8o7bJaEfAw7unwGiDjgj/view?usp=share_link" target="_blank">Download My CV</a></small>
+                        <small><a href="https://drive.google.com/file/d/1dSWudE-Fb-y6IiE1xzuHYlQ42knT3kqr/view?usp=share_link" target="_blank">Download My CV</a></small>
                     </div>
                     <div class="hero-cv-item">
                         <small><a href="https://www.linkedin.com/in/cx31-uiuxdev/"  target="_blank">LinkedIn</a></small>
@@ -77,18 +78,18 @@
             </a>
         </div>
 
-        <section id="about" class="about-section">
+        <section id="about" class="about-section flex-centered">
             <div class="about-container">
-                <div class="about-title">
+                <div class="about-title flex-column-centered">
                     <h3>ABOUT</h3>
                     <div class="section-hr"></div>
                 </div>
-                <div class="about-content">
+                <div class="about-content flex-column-centered">
                     <div class="about-content-left">
                         <img src="assets/zirc.png" alt="Zirc" width="100%"/>
                     </div>
                     <div class="about-content-right">
-                        <p>I am <span class="zirc-name">Zirc Albon</span> a former <strong>Web & Software Developer</strong> who has experienced and become proficient in <strong>Service Desk</strong>, <strong>IT Administration</strong>, <strong>Virtual Reality Systems</strong>, and <strong>Software</strong> seeking to return to the coding industry.</p>
+                        <p>I am <span class="about-name">Zirc Albon</span> a former <strong>Web & Software Developer</strong> who has experienced and become proficient in <strong>Service Desk</strong>, <strong>IT Administration</strong>, <strong>Virtual Reality Systems</strong>, and <strong>Software</strong> seeking to return to the coding industry.</p>
                         <p>I have up-skilled my <strong>knowledge</strong> and <strong>tech stacks</strong> in <strong>web development</strong> through several <strong>courses</strong> and <strong>boot camps</strong>.</p>
                         <p>I <strong>love</strong> and <strong>enjoy</strong> working with <strong>team members</strong> or with groups of people, <strong>working together</strong> effectively, and sharing the <strong>workload</strong>. I also work well <strong>independently</strong>. I have a keen eye for <strong>details</strong> and <strong>design</strong>. I'm a <strong>fast learner</strong>, <strong>hardworking</strong>, and willing to <strong>render</strong> for <strong>extended hours</strong>.</p>
                     </div>
@@ -97,40 +98,94 @@
         </section>
 
 
-        <section id="skills" class="skills-section">
-            <div class="skills-title">
+        <section id="skills" class="skills-section flex-column-centered">
+            <div class="skills-title flex-column-centered">
                 <h3>SKILLS</h3>
                 <div class="section-hr"></div>
             </div>
             <div class="skills-item">
                 <span>HTML</span>
                 <span>CSS</span>
-                <span>Wordpress</span>
-                <span>Figma</span>
+                <span>JavaScript</span>
+                <span>WordPress</span>
+                <span>Figma</span><br />
+                <div class="skills-item-desc">
+                    <p>Proficient in creating structured and well-organized web content using <b>HTML</b>.</p>
+                    <p>Experienced in styling and designing web pages with <b>CSS</b>, including responsive design and cross-browser compatibility.</p>
+                    <p>Adept in implementing dynamic and interactive features using <b>JavaScript</b>, including DOM manipulation and AJAX.</p>
+                    <p>Proficient in <b>WordPress</b>, with experience in theme and plugin development, custom post types, and advanced features of the platform.</p>
+                    <p>Experienced in designing and prototyping user interfaces using <b>Figma</b>, with a strong understanding of design systems and style guides.</p>
+                </div>
             </div>
         </section>
 
 
-        <section id="project" class="project-section">
-            <div class="project-title">
+        <section id="project" class="project-section flex-column-centered">
+            <div class="project-title flex-column-centered">
                 <h3>MY PROJECTS</h3>
                 <div class="section-hr"></div>
             </div>
             <div class="project-container">
-                <div class="project-content">
-                    <div class="project-item">
+                <div class="project-content flex-column-centered">
+                    <div class="project-item flex-column-centered">
                         <img src="assets/zirc_thumbnail.png" alt="Zirc Web Dev Porfolio"/>
-                        <p>Simple HTML+CSS Portfolio</p>
-                        <p>A simple HTML & CSS portfolio built by using Float, Flexbox & Grid.</p>
-                        <p>Skills: <span>HTML</span> <span>CSS</span></p>
-                        <p><a href="https://github.com/zirc31/SimpleHtmlCssPortfolio" target="_blank">Git</a> | <a href="https://zircdev.netlify.app" target="_blank">View site</a></p>
+                        <div class="project-item-title">
+                            Simple HTML+CSS Portfolio
+                        </div>
+                        <div class="project-item-desc">
+                            A simple HTML & CSS portfolio built by using Float, Flexbox & Grid.
+                        </div>
+                        <div class="project-item-skills">
+                            Skills : <span>HTML</span> <span>CSS</span>
+                        </div>
+                        <div class="project-item-links">
+                            <a href="https://github.com/zirc31/SimpleHtmlCssPortfolio" target="_blank">Git</a> | <a href="https://zircdev.netlify.app/" target="_blank">View site</a>
+                        </div>
                     </div>
-                    <div class="project-item">
-                        <img src="assets/thumbnail_only.png" alt="Project Two"/>
-                        <p>Project Two</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>Skills: <span>HTML</span> <span>CSS</span> <span>VanillaJS</span></p>
-                        <p><a href="#">Git</a> | <a href="#">View site</a></p>
+                    <div class="project-item flex-column-centered">
+                        <img src="assets/thumbnail_only.png" alt="A Note-Taking App Project."/>
+                        <div class="project-item-title">
+                            Note-Taking App
+                        </div>
+                        <div class="project-item-desc">
+                            An app that allows users to create, organize, and save notes, ideas, and to-do lists.
+                        </div>
+                        <div class="project-item-skills">
+                            Skills : <span>HTML</span> <span>CSS</span> <span>JS</span>
+                        </div>
+                        <div class="project-item-links">
+                            <a href="#" target="_blank">Git</a> | <a href="#">View site</a>
+                        </div>
+                    </div>
+                    <div class="project-item flex-column-centered">
+                        <img src="assets/thumbnail_only.png" alt="A Social Media App Project."/>
+                        <div class="project-item-title">
+                            Social Media App
+                        </div>
+                        <div class="project-item-desc">
+                            A social media app or another chat application, A real-time chat app that allows users to communicate with each other.
+                        </div>
+                        <div class="project-item-skills">
+                            Skills : <span>HTML</span> <span>CSS</span> <span>JS</span>
+                        </div>
+                        <div class="project-item-links">
+                            <a href="#" target="_blank">Git</a> | <a href="#">View site</a>
+                        </div>
+                    </div>
+                    <div class="project-item flex-column-centered">
+                        <img src="assets/thumbnail_only.png" alt="An Online Code Editor Project."/>
+                        <div class="project-item-title">
+                            Online Code Editor
+                        </div>
+                        <div class="project-item-desc">
+                            An online code editor, can use manage and edit source codes.
+                        </div>
+                        <div class="project-item-skills">
+                            Skills : <span>HTML</span> <span>CSS</span> <span>JS</span>
+                        </div>
+                        <div class="project-item-links">
+                            <a href="#" target="_blank">Git</a> | <a href="#">View site</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -138,31 +193,15 @@
 
 
         <section id="contact" class="contact-section">
-            <div class="contact-container">
-                <div class="contact-title">
+            <div class="contact-container flex-column-centered">
+                <div class="contact-title flex-column-centered">
                     <h3>CONTACT</h3>
                     <div class="section-hr"></div>
                 </div>
                 <div class="contact-content">
-                    <div class="contact-container-left">
-                        <div class="left-content">
-                            <div class="left-content-title">
-                                <h2>Contact Details</h2>
-                                <p>Feel free to contact me anytime.</p>
-                            </div>
-                            <div class="left-content-details">
-                                <h6>Location:</h6>
-                                <h2>San Andres, Cainta Rizal, PH</h2>
-                                <h6>Email:</h6>
-                                <h2><a href="mailto:zirc.developer@gmail.com">zirc [dot] developer [at] gmail [dot] com</a></h2>
-                                <h6>Viber & Whatsapp:</h6>
-                                <h2>+639##-###-####</h2>
-                            </div>
-                        </div>
-                    </div> <!-- .contact-container-left -->
                     <div class="contact-container-right">
                         <div class="right-content">
-                            <div class="right-content-title">
+                            <div class="right-content-title flex-column-centered">
                                 <h2>Get In Touch</h2>
                                 <p>Kindly fill out all required fields.</p>
                             </div>
@@ -220,10 +259,10 @@
                 </div> <!-- .contact-content -->
             </div> <!-- .contact-container  -->
         </section>
-        <footer id="footer-container">
+        <footer id="footer-container" class="flex-centered">
             <p>
                 <small>
-                    Design and Coded by: ZircAlbon © 2023 | Photo by <a href="https://www.pexels.com/">Pexels</a>
+                    Design and Coded by: ZircAlbon © 2023 | Photo from <a href="https://www.pexels.com/" target="_blank">Pexels</a>
                 </small>
             </p>
         </footer>
