@@ -64,8 +64,9 @@
         width: 35%;
     }
 
-    .project-item img {
-        width: 50%;
+    .project-grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr;
     }
 
     .right-content {
@@ -85,4 +86,7 @@
         font-size:3rem;
         font-weight:700;
     }    
+    .project-grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
