@@ -176,7 +176,6 @@ section {
 .skills-section {
     width: 100%;
     padding: 100px 0;
-    /* background-color: #dfdfdf; */
     background-color: #FBFBFB;
 }
 .skills-title {
@@ -196,7 +195,6 @@ section {
     background-color:#FCFCFC;
     border: 1px solid #800000;
     display: inline-block;
-    /* box-shadow: #21252f; */
     box-shadow: 2px 3px #21252f;
 
 }
@@ -221,7 +219,7 @@ section {
 .project-title h3 {
     color: #fff;
 }
-.section-hr {
+.project-title .section-hr {
     width: 55%;
     height:5px;
     margin: 5px 0 15px 0;
