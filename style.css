@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Sora', 'Montserrat', sans-serif;
     color: #800000;
     box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
 }
 h1,h2,h3,h4,h5,h6 {
     color: #800000;
@@ -29,6 +34,9 @@ html, body {
     align-items: center;
     justify-content: center;
 }
+.flex-text-center {
+    text-align: center;
+}
 
 /* Header & Navigation Section */
 .logo img {
@@ -36,7 +44,7 @@ html, body {
 }
 header {
     width: 100%;
-    height: 85px;
+    height: 70px;
     text-align: center;
 }
 .navigation a {
@@ -80,7 +88,7 @@ section {
 }
 .hero-name h1 {
     margin-left: 10px;
-    font-family: 'Titillium Web', sans-serif;
+    /* font-family: 'Titillium Web', sans-serif; */
 }
 .hero-title {
     width: 50%;
@@ -124,55 +132,83 @@ section {
     bottom: 0;
     margin: 5px 5px 5px 5px;
     border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+.scroll-up-btn img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Section Title */
+.section-title {
+    width: 100%;
+    margin: 15px 0;
+}
+.section-title h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #21252f;
+}
+.section-hr {
+    width: 50px;
+    height: 5px;
+    margin: 5px 0 15px 0;
+    border-bottom: 2px solid #800000;
+}
+.section-title-white h1,
+.section-title-white h5 {
+    color: #fff;
+}
+.section-hr-white {
+    border-bottom: 2px solid #fff;
 }
 
 /* About Section */
 .about-section {
     width: 100%;
-    padding: 100px 0;
+    /* padding: 150px 0; */
+    padding-top: 150px;
 }
-.about-container {
+.about-grid-container {
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
 }
-.about-title {
-    width: 100%;
-    margin: 25px 0;
+.about-grid-item {
+    margin-bottom: 25px;
 }
-.section-hr {
-    width: 55%;
-    height:5px;
-    margin: 5px 0 15px 0;
-    border-bottom: 2px solid #800000;
+.about-grid-item h4 {
+    color: #21252f;
 }
-.about-content {
-    width: 100%;
-    padding: 0 5%;
+.about-grid-item p {
+    padding-bottom: 10px;
 }
-.about-content strong {
-    color:#21252f;
+.about-grid-item p small {
+    display: block;
+    color: #21252f;
 }
-.about-name {
-    color: #800000;
-    font-weight: 700;
+.about-left-content {
+    height: 70vh;
+    background-image: url(assets/zirc.png);
+    background-position: center;
+    background-size: cover;
 }
-.about-content-left {
-    width: 120px;
+.about-right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.about-content-left img {
-    border-radius: 60px;
-    border: 3px solid #21252f;
-}
-.about-content-right {
-    text-align: center;
-}
-.about-content-right p {
-    margin-top: 15px;
+.about-grid-item {
+    padding-left: 5%;
+    padding-right: 10%;
 }
 
 /* Skills Section */
 .skills-section {
     width: 100%;
-    padding: 100px 0;
+    padding: 150px 0;
     background-color: #FBFBFB;
 }
 .skills-title {
@@ -187,7 +223,7 @@ section {
     padding: 10px;
     margin: 5px; 
     color: #800000;
-    font-family: 'Titillium Web', sans-serif;
+    /* font-family: 'Titillium Web', sans-serif; */
     font-weight: 700;
     background-color:#FCFCFC;
     border: 1px solid #800000;
@@ -229,7 +265,7 @@ section {
     color: #fff;
 }
 .project-title .section-hr {
-    width: 55%;
+    width: 50px;
     height:5px;
     margin: 5px 0 15px 0;
     border-bottom: 2px solid #ffffff;

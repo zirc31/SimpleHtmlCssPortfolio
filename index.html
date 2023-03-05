@@ -5,36 +5,31 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="style.css" >
+        <link type="text/css" rel="stylesheet" href="menu.css" >
         <link type="text/css" rel="stylesheet" href="media-queries.css" >
         <link type="text/css" rel="stylesheet" href="font.css" >
 
-        <title>Zirc Albon's Porfolio</title>
+        <title>Zirc Albon's Portfolio</title>
     </head>
     <body>
         <header id="header">
-            <div class="logo">
-                <a href="#"><img src="assets/zirc_logo.png" alt="ZircLogo" /></a>
-            </div>
-            <div class="navigation">
-                <ul class="nav-ul flex-centered">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#project">Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+            <section class="top-nav">
+                <div class="logo">
+                    <a href=""><img src="assets/zirc_logo.png" alt="ZircLogo" /></a>
+                </div>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-            </div>
-        </header> <!-- #header -->
+            </section>
+        </header> <!-- header section -->
 
 
         <section class="hero-section">
@@ -56,40 +51,53 @@
                 </div>
                 <div class="hero-cv flex-column-centered">
                     <div class="hero-cv-item">
-                        <small><a href="https://zircdev.netlify.app" target="_blank">Visit Updated Portfolio</a></small>
+                        <small><a href="https://drive.google.com/drive/folders/1V-nIJEQhsYCkqr7XEFuqO8XqQS5UrFy3?usp=share_link" target="_blank">Download CV</a></small>
                     </div>
-                    <!-- <div class="hero-cv-item">
+                    <div class="hero-cv-item">
                         <small><a href="https://www.linkedin.com/in/cx31-uiuxdev/"  target="_blank">LinkedIn</a></small>
                     </div>
                     <div class="hero-cv-item">
                         <small><a href="https://www.facebook.com/zircitsolutions"  target="_blank">Facebook</a></small>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </section> <!-- .hero-section -->
 
         <div class="scroll-btn-container">
-            <a href="#header">
+            <a href="#">
                 <div class="scroll-up-btn">
-                    <small>Back to Top</small>
+                    <img src="assets/up-back-to-top-btn-maroon.png" alt="Back to top button"/>
                 </div>
             </a>
         </div> <!-- .scroll-btn-container -->
 
-        <section id="about" class="about-section flex-centered">
-            <div class="about-container">
-                <div class="about-title flex-column-centered">
-                    <h3>ABOUT</h3>
-                    <div class="section-hr"></div>
+
+        <section id="about" class="about-section flex-column-centered">
+            <div class="about-grid-container">
+                <div class="about-left-content">
                 </div>
-                <div class="about-content flex-column-centered">
-                    <div class="about-content-left">
-                        <img src="assets/zirc.png" alt="Zirc" width="100%"/>
-                    </div>
-                    <div class="about-content-right">
-                        <p>I am <span class="about-name">Zirc Albon</span> a former <strong>Web & Software Developer</strong> since 2009, who has experienced and become proficient in <strong>Service Desk</strong>, <strong>IT Administration</strong>, <strong>Virtual Reality Systems</strong>, and <strong>Software</strong>.</p>
-                        <p>I returned to the coding industry and have up-skilled my <strong>knowledge</strong> and <strong>tech stacks</strong> in <strong>web development</strong> through several <strong>courses</strong> and <strong>boot camps</strong>.</p>
-                        <p>I <strong>love</strong> and <strong>enjoy</strong> working with <strong>team members</strong> or with groups of people, <strong>working together</strong> effectively, and sharing the <strong>workload</strong>. I also work well <strong>independently</strong>. I have a keen eye for <strong>details</strong> and <strong>design</strong>. I'm a <strong>fast learner</strong>, <strong>hardworking</strong>, and willing to <strong>render</strong> for <strong>extended hours</strong>.</p>
+                <div class="about-right-content">
+                    <div class="about-grid-item">
+                        <div class="section-title">
+                            <h5>WHO AM I</h5>
+                            <h1>ZIRC ALBON</h1>
+                            <div class="section-hr"></div>
+                        </div>
+                        <p>A former Web & Software Developer since 2009, who has experienced and become proficient in Service Desk, IT Administration, Virtual Reality Systems, and Software.</p>
+                        <p>I have returned to the coding industry and have up-skilled my knowledge and tech stacks  in web development through several courses and boot camps.</p>
+                        <p>I specialize in providing comprehensive web development services that encompass all aspects of the development process.</p>
+                        <h4>UI/UX Design</h4>
+                        <p>
+                            <small>I understand the importance of creating user-centric designs that are visually appealing, intuitive, and easy to navigate. I work closely with clients to create designs that align with their brand values and meet the needs of their target audience.</small>
+                        </p>
+                        <h4>Front-end Development</h4>
+                        <p>
+                            <small>I specialize in creating responsive and interactive user interfaces using HTML, CSS, and JavaScript, and ensure that the website looks great on all devices and that users can interact with the website seamlessly.</small>
+                        </p>
+                        <h4>Back-end Development</h4>
+                        <p>
+                            <small>I have experienced in creating robust and scalable web applications using various frameworks, libraries, and programming languages such as PHP, Python, and Node.js, and ensure that the website is secure, fast, and reliable.</small>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -97,16 +105,46 @@
 
 
         <section id="skills" class="skills-section flex-column-centered">
-            <div class="skills-title flex-column-centered">
-                <h3>SKILLS</h3>
+            <div class="section-title flex-column-centered flex-text-center">
+                <h5>WHAT I DO</h5>
+                <h1>SKILLS, TECH STACKS & TOOLS</h1>
                 <div class="section-hr"></div>
             </div>
             <div class="skills-item">
                 <span>HTML</span>
                 <span>CSS</span>
+                <span>SASS</span>
+                <span>Tailwind</span>
+                <span>Bootstrap</span>
+                <span>Styled-component</span>
+                <span>Material UI</span>
                 <span>JavaScript</span>
+                <span>ReactJS</span>
+                <span>NextJS</span>
+                <span>VueJS</span>
+                <span>ExpressJS</span>
+                <span>NodeJS</span>
+                <span>MongoDB</span>
+                <span>Laravel</span>
+                <span>CodeIgniter</span>
                 <span>WordPress</span>
-                <span>Figma</span><br />
+                <span>PHP</span>
+                <span>Python</span>
+                <span>Django</span>
+                <span>MVC stack</span>
+                <span>CRUD stack</span>
+                <span>MERN stack</span>
+                <span>MEVN stack</span>
+                <span>VanilaJS(Animation)</span>
+                <span>Unity</span>
+                <span>Blender</span>
+                <span>Maya3D</span>
+                <span>3DSmax</span>
+                <span>Figma</span>
+                <span>Bash</span>
+                <span>Git</span>
+                <span>VS Studio</span>
+                <span>Docker</span><br />
                 <div class="skills-item-desc">
                     <p>Proficient in creating structured and well-organized web content using <b>HTML</b>.</p>
                     <p>Experienced in styling and designing web pages with <b>CSS</b>, including responsive design and cross-browser compatibility.</p>
@@ -119,9 +157,10 @@
 
 
         <section id="project" class="project-grid-section flex-column-centered">
-            <div class="project-title flex-column-centered">
-                <h3>MY PROJECTS</h3>
-                <div class="section-hr"></div>
+            <div class="section-title section-title-white flex-column-centered">
+                <h5>MY</h5>
+                <h1>PROJECTS</h1>
+                <div class="section-hr section-hr-white"></div>
             </div>
             <div class="project-grid-container">
                 <div class="project-grid-items flex-column-centered">
@@ -219,18 +258,16 @@
 
         <section id="contact" class="contact-section">
             <div class="contact-container flex-column-centered">
-                <div class="contact-title flex-column-centered">
-                    <h3>CONTACT</h3>
+                <div class="section-title flex-column-centered">
+                    <h5>CONTACT</h5>
+                    <h1>GET IN TOUCH</h1>
+                    <p><small>Kindly fill out all required fields.</small></p>
                     <div class="section-hr"></div>
                 </div>
                 <div class="contact-content">
                     <div class="contact-container-right">
                         <div class="right-content">
-                            <div class="right-content-title flex-column-centered">
-                                <h2>Get In Touch</h2>
-                                <p>Kindly fill out all required fields.</p>
-                            </div>
-                            <form class="contact-form">
+                            <form method="POST" id="getInTouch" name="getInTouch" class="contact-form" onsubmit = "">
                                 <div class="contact-content-item">
                                     <label class="contact-label">Fullname</label>
                                     <input
@@ -279,6 +316,10 @@
                                     >Submit</button>
                                 </div>
                             </form>
+                            <div class="flex-centered">
+                                <br /><br />
+                                <p>or send me an email to: <a href="mailto:zirc.developer@gmail.com" target="_blank">zirc.developer [at] gmail [dot] com</a>.</p>
+                            </div>
                         </div> <!-- .right-content -->
                     </div> <!-- .contact-container-right -->
                 </div> <!-- .contact-content -->
@@ -288,7 +329,7 @@
         <footer id="footer-container" class="flex-centered">
             <p>
                 <small>
-                    Design and Coded by: ZircAlbon © 2023 | Photos from <a href="https://www.pexels.com/" target="_blank">Pexels</a>
+                    Design and Coded by: ZircAlbon © 2023 | visit <a href="https://github.com/zirc31/ZircDevPortfolio" target="_blank">Github</a> for Attributes.
                 </small>
             </p>
         </footer>
